@@ -1,0 +1,9 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+#main {
+    flex: 1;
+    padding-bottom: 50px; /* Platz für den Footer schaffen */
+}

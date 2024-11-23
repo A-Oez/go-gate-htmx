@@ -1,0 +1,15 @@
+# Config file for Air 
+[build]
+  # Command to build the app 
+  cmd = "go build -o main.exe cmd/main.go"
+  # Binary to watch 
+  bin = "main.exe" #on windows use .exe
+  # Working directory 
+  dir = "."
+  # Patterns to watch 
+  include_ext = ["go", "tpl", "tmpl", "html", "jet"]
+  # Exclude files 
+  exclude_dir = ["vendor"]
+  # Command to run after build 
+  run_after_build = "chmod +x main"
+  poll = true #also important on windows
