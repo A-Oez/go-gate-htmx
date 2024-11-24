@@ -1,0 +1,52 @@
+.table-grid{
+    padding: 50px;   
+    display: flex;
+    gap: 25px;
+}
+
+.proxy-table{
+    flex:9;
+}
+
+.proxy-table-config ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.proxy-table-config li {
+    display: block; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proxy-table-config a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;    
+    height: 50px;   
+    background-color: #f0f0f0;
+    border-radius: 50%; 
+}
+
+.proxy-table-config a:hover {
+    background-color: #606061;
+}
+
+.proxy-table-config a img {
+    width: 24px; 
+    height: 24px; 
+}
+
+.table-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.proxy_table_button{
+    display: block;
+    margin: 10px auto;
+}

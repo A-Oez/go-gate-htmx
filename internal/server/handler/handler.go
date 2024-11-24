@@ -8,6 +8,6 @@ func HomeHandler(c *fiber.Ctx) error {
 	return c.Render("layouts/home", fiber.Map{})
 }
 
-func MappingHandler(c *fiber.Ctx) error {
-	return c.Render("layouts/mapping", fiber.Map{})
+func ProxyHandler(c *fiber.Ctx) error {
+	return c.Render("layouts/proxy", fiber.Map{})
 }

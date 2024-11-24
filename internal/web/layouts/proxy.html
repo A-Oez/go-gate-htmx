@@ -6,15 +6,17 @@
         <meta name="color-scheme" content="light dark">
         <title>go-gate</title>
         <link rel="stylesheet" href="/internal/web/static/css/layout.css">
+        <link rel="stylesheet" href="/internal/web/static/css/proxy.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.slate.min.css"/>
-    </head>    
+    </head>
     <body>
         {{template "components/navbar" .}}
         <main class="container-fluid" id="main">
             <hgroup>
-                <h2>Dashboard</h2>
-                <p>Visualizes analytics and monitoring data for better insights.</p>
+                <h2>Proxy Mapping</h2>
+                <p>Manage and define routing rules for backend services through the gateway.</p>
             </hgroup>
+            {{template "components/proxy_table" .}}
         </main>
         {{template "components/footer" .}}
     </body>

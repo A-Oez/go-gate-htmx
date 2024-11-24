@@ -1,0 +1,75 @@
+<dialog id="modal">
+    <article>
+        <header>
+            <button id="close-modal" aria-label="Close" rel="prev"></button>
+            <p><strong>🗓️ Edit Table:</strong></p>
+        </header>
+        <form>
+            <details class="dropdown" id="row-dropdown">
+                <summary>Rows</summary>
+                <ul id="dropdown-list">
+                </ul>
+            </details>
+        </form>
+    </article>
+</dialog>
+
+<div class="table-grid">
+    <div class="proxy-table">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Service Scheme</th>
+                    <th scope="col">Service Host</th>
+                    <th scope="col">Service Path</th>
+                    <th scope="col">Method</th>
+                    <th scope="col">Client Request Path</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="proxy-rows">
+                    <td scope="row">http</td>
+                    <td>apitest:8080</td>
+                    <td>/test</td>
+                    <td class ="method">GET</td>
+                    <td class="client-request-path">/api</td>
+                </tr>
+                <tr class="proxy-rows">
+                    <td scope="row">http</td>
+                    <td>test:8080</td>
+                    <td>/hallo</td>
+                    <td class ="method">POST</td>
+                    <td class="client-request-path">/testasd</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="proxy-table-config">
+        <ul>
+            <li><h4>Table Settings</h4></li>
+            <li>
+                <a href="#" title="New Row" id=newRow>
+                    <img src="https://img.icons8.com/ios/50/plus-2-math.png" alt="Edit">
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Edit Row" id=editRow>
+                    <img src="https://img.icons8.com/ios/50/pencil--v1.png" alt="Edit">
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Save Table">
+                    <img src="https://img.icons8.com/ios/50/save--v1.png" alt="Expor">
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Export Table">
+                    <img src="https://img.icons8.com/ios/50/export.png" alt="Expor">
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+<script src="/internal/web/static/js/modal_handler.js"></script>

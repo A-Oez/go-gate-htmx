@@ -9,5 +9,5 @@ import (
 
 func RegisterRouter(app fiber.Router) {
 	app.Get("/", handler.HomeHandler)
-	app.Get("/mapping", handler.MappingHandler)
+	app.Get("/proxy", handler.ProxyHandler)
 }
